@@ -53,7 +53,7 @@ html {
 }
 .header__title-container h1 {
 	font-size: 2.4rem;
-	font-weight: bold;
+	font-weight: medium;
 	line-height: 2.6rem;
 	color: var(--just-white);
 }
@@ -114,20 +114,77 @@ html {
 	min-width: 288px;
 	max-width: 900px;
 	margin: 0 auto;
-    text-align: center;
+	text-align: center;
 }
-.exchange__text-container h2{
-    margin-top: 30px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
+.exchange__text-container h2 {
+	margin-top: 30px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--black);
+}
+.exchange__text-container p {
+	margin-top: 30px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #757575;
+}
 
+/* Table */
+.table td {
+	width: 100px;
+	height: 40px;
+	padding: 10px 12px;
+	background-color: var(--just-white);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	color: #b5b0ac;
 }
-.exchange__text-container p{
-    margin-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: #757575;
+.table tr:nth-child(1) td:nth-child(1) {
+	border-top-left-radius: 8px;
+}
+.table tr:first-child td:last-child {
+	border-top-right-radius: 8px;
+}
+.table tr:nth-child(4) td:nth-child(1) {
+	border-bottom-left-radius: 8px;
+}
+.table tr:last-child td:last-child {
+	border-bottom-right-radius: 8px;
+}
+.table tr td:last-child {
+	font-weight: 400;
+	color: #757575;
+}
+/* Currency table */
+.currency tr td span {
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+.currency tr td:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.currency tr:nth-child(1) td span,
+.currency tr:nth-child(3) td span,
+.currency tr:nth-child(4) td span {
+	background-image: url('/assets/icons/trending-down.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.currency tr:nth-child(2) td span {
+	background-image: url('/assets/icons/trending-up.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/* Commissions table */
+.commissions tr td:nth-child(2) {
+text-align: center;
 }
