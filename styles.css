@@ -64,3 +64,25 @@ html {
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
+.header__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -24px;
+    width: 229px;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--off-white);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+}
+.header__button span {
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
