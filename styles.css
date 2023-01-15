@@ -86,3 +86,21 @@ html {
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
 }
+/* Main */
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+/* Exchange */
+.exchange {
+    width: 100%;
+    height: auto;
+}
+.exchange__text-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
