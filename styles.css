@@ -88,13 +88,14 @@ html {
 }
 /* Main */
 .main {
+	display: inline-block;
 	width: 100%;
 	min-width: 320px;
 	height: auto;
 	background-color: var(--off-white);
 }
 
-/* Exchange */
+/* Exchange Section*/
 .exchange {
 	width: 100%;
 	min-width: 320px;
@@ -130,10 +131,36 @@ html {
 	line-height: 1.6rem;
 	color: #757575;
 }
-
+/* Scroll */
+.exchange__scroll-container {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* Exchange Table Block */
+.exchange__table-block-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-width: 320px;
+}
+/* Exchange Table Block h3 */
+.exchange__table-block-container h3 {
+	font-size: 1.8rem;
+}
+.exchange .currency h3 {
+	color: var(--bitcoin-orange);
+}
+.exchange .commissions h3 {
+	color: var(--secondary-blue);
+}
 /* Table */
 .table td {
-	width: 100px;
+	min-width: 100px;
 	height: 40px;
 	padding: 10px 12px;
 	background-color: var(--just-white);
@@ -184,7 +211,33 @@ html {
 	background-position: center;
 	background-size: cover;
 }
+
 /* Commissions table */
 .commissions tr td:nth-child(2) {
-text-align: center;
+	text-align: center;
+}
+
+/* Date */
+.exchange__currency-date,
+.exchange__commissions-date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 173px;
+	height: 31px;
+	border-radius: 8px;
+}
+.exchange__currency-date p,
+.exchange__commissions-date p {
+	font-size: 1.2rem;
+}
+.exchange__currency-date p span,
+.exchange__commissions-date p span {
+	font-weight: 700;
+}
+.exchange__currency-date {
+	background-color: var(--soft-orange);
+}
+.exchange__commissions-date {
+	background-color: var(--soft-blue);
 }
