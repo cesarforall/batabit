@@ -92,14 +92,15 @@ html {
 	width: 100%;
 	min-width: 320px;
 	height: auto;
-	background-color: var(--off-white);
 }
 
 /* Exchange Section*/
 .exchange {
+	display: inline-block;
 	width: 100%;
 	min-width: 320px;
 	height: auto;
+	background-color: var(--off-white);
 }
 .exchange__image-container {
 	display: flex;
