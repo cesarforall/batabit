@@ -376,9 +376,19 @@ html {
 	line-height: 1.8rem;
 	color: #757575;
 }
+/* PLans Scroll Container*/
+.plans__cards-container {
+	display: flex;
+	gap: 50px;
+	padding: 10px 70px;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+}
 /* Plans - Card */
 .plans__card {
 	position: relative;
+	scroll-snap-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
