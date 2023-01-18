@@ -480,3 +480,27 @@ html {
 	background-size: cover;
 	vertical-align: middle;
 }
+/* Footer */
+.footer {
+	display: inline-block;
+	width: 100%;
+	background-color: var(--bitcoin-orange);
+}
+.footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 40px 0;
+
+	
+}
+.footer__links {
+	list-style: none;
+}
+.footer__links li a{
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 18px;
+	color: var(--just-white);
+	text-decoration: none;
+}
