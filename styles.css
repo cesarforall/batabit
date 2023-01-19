@@ -507,3 +507,20 @@ html {
 	color: var(--just-white);
 	text-decoration: none;
 }
+@media (min-width: 641px) {
+	.exchange__scroll-container {
+		padding: initial;
+	}
+}
+@media (min-width: 671px) {
+	.plans__cards-container {
+		justify-content: center;
+		padding: 10px 10px;
+		gap: 10px;
+	}
+	.plans__card {
+		max-width: 223px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
