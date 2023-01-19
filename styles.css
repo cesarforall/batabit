@@ -136,10 +136,11 @@ html {
 /* Scroll */
 .exchange__scroll-container {
 	display: flex;
-	overflow: hidden;
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px 0;
+	padding: 0 100px;
+	overflow-y: scroll;
+	scroll-snap-type: x proximity;
 }
 /* Exchange Table Block */
 .exchange__table-block-container {
@@ -148,7 +149,9 @@ html {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	width: 100%;
 	min-width: 320px;
+	scroll-snap-align: center;
 }
 /* Exchange Table Block h3 */
 .exchange__table-block-container h3 {
@@ -280,9 +283,11 @@ html {
 	width: 90%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 20px;
 }
 .card {
+	max-width: 400px;
 	height: 152px;
 	padding: 10px;
 	border-radius: 4px;
@@ -379,7 +384,6 @@ html {
 /* PLans Scroll Container*/
 .plans__cards-container {
 	display: flex;
-	justify-content: center;
 	gap: 50px;
 	padding: 10px 70px;
 	overflow-x: scroll;
@@ -484,15 +488,14 @@ html {
 .footer {
 	display: inline-block;
 	width: 100%;
+	min-width: 320px;
 	background-color: var(--bitcoin-orange);
 }
 .footer-container {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	margin: 40px 0;
-
-	
+	margin: 40px 0;	
 }
 .footer__links {
 	list-style: none;
