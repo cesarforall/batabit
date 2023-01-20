@@ -509,7 +509,11 @@ html {
 }
 @media (min-width: 641px) {
 	.exchange__scroll-container {
+		justify-content: center;
 		padding: initial;
+	}
+	.exchange__table-block-container {
+		width: initial;
 	}
 }
 @media (min-width: 671px) {
